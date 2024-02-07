@@ -1,34 +1,32 @@
 #!/usr/bin/env python3.10
 from random import randint
-from prompt import string
+import enginy
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    name = string('May I have your name? ')
-    print(f'Hello, {name}\nAnswer "yes" if the number is even, otherwise answer "no".')
+    enginy.welcome_us()
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
     counter = 0
 
     while counter != 3:
         randoms_value = randint(0, 1000)
 
-        print(f'Question: {randoms_value}')
-        user_answer = string('Your answer: ')
+        enginy.question(randoms_value)
+        answer = enginy.user_answer()
 
-        if (randoms_value % 2 == 0 and user_answer == 'yes' or
-                randoms_value % 2 != 0 and user_answer == 'no'):
+        if (randoms_value % 2 == 0 and answer == 'yes' or
+                randoms_value % 2 != 0 and answer == 'no'):
             counter += 1
             print('Correct!')
 
         else:
-            mirror_answer = 'yes' if randoms_value % 2 == 0 else 'no'
+            correct_answer = 'yes' if randoms_value % 2 == 0 else 'no'
 
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{mirror_answer}'. "
-                  f"\nLet's try again, {name}")
+            enginy.goodbye_user(answer, correct_answer)
             break
-    if counter == 3:
-        print(f'Congratulations, {name}!')
+
+    enginy.congratulations(counter)
 
 
 if __name__ == '__main__':
