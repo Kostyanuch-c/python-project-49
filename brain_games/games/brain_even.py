@@ -1,9 +1,8 @@
-#!/usr/bin/env python3.10
 from random import randint
 import enginy
 
 
-def main():
+def even_game():
     enginy.welcome_us()
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
@@ -29,5 +28,4 @@ def main():
     enginy.congratulations(counter)
 
 
-if __name__ == '__main__':
-    main()
+
