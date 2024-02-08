@@ -1,31 +1,23 @@
 from random import randint
-import enginy
+import brain_games.enginy
 
 
-def even_game():
-    enginy.welcome_us()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+def problem_and_correct_answer():
+    problem = randint(0, 1000)
+
+    if problem % 2 == 0:
+        correct_answer = 'yes'
+    elif problem % 2 != 0:
+        correct_answer = 'no'
+    else:
+        correct_answer = 'no'
+    return problem, correct_answer
+
+
+def game_even():
+    question = 'answer "yes" if the number is even, otherwise answer "no".'
+    brain_games.enginy.welcome_us(question)
 
     counter = 0
-
-    while counter != 3:
-        randoms_value = randint(0, 1000)
-
-        enginy.question(randoms_value)
-        answer = enginy.user_answer()
-
-        if (randoms_value % 2 == 0 and answer == 'yes' or
-                randoms_value % 2 != 0 and answer == 'no'):
-            counter += 1
-            print('Correct!')
-
-        else:
-            correct_answer = 'yes' if randoms_value % 2 == 0 else 'no'
-
-            enginy.goodbye_user(answer, correct_answer)
-            break
-
-    enginy.congratulations(counter)
-
-
-
+    while counter < 3:
+        counter = brain_games.enginy.comparison(problem_and_answer=problem_and_correct_answer(), counter=counter)
