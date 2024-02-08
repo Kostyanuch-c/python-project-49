@@ -17,14 +17,14 @@ def calc_game():
 
     while counter != 3:
         random_operation = choice(action_key)
-        first_value = randint(10, 200)
-        second_value = randint(1, 100)
+        first_value = randint(10, 20)
+        second_value = randint(1, 10)
 
         enginy.question(f'{first_value} {random_operation} {second_value}')
         answer = enginy.user_answer()
 
-        correct_answer = action[random_operation](first_value, second_value)
-        if answer == correct_answer and answer is int:
+        correct_answer = f'{action[random_operation](first_value, second_value)}'
+        if answer == correct_answer:
             counter += 1
             print('Correct!')
         else:
