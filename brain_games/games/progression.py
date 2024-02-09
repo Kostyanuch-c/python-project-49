@@ -1,5 +1,5 @@
 from random import randint
-import enginy
+import brain_games.enginy
 
 
 def problem_and_correct_answer():
@@ -25,9 +25,9 @@ def problem_and_correct_answer():
 
 def progression_game():
     question = 'What number is missing in the progression?'
-    enginy.welcome_us(question)
+    brain_games.enginy.welcome_us(question)
 
     counter = 0
 
     while counter < 3:
-        counter = enginy.comparison(problem_and_answer=problem_and_correct_answer(), counter=counter)
+        counter = brain_games.enginy.comparison(problem_and_answer=problem_and_correct_answer(), counter=counter)
