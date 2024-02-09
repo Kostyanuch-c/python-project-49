@@ -26,7 +26,7 @@ def comparison(problem_and_answer, counter):
     else:
         counter += 4
         print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'. "
-              f"\nLet's try again, {user_name}")
+              f"\nLet's try again, {user_name}!")
 
     if counter == 3:
         print(f'Congratulations, {user_name}!')
