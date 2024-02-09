@@ -10,3 +10,7 @@ brain-calc
 
 brain-gcd
 ![third](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/4eba0987-2338-423f-9184-17cd5ff48445)
+
+brain_progression
+![fourth](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/78f56359-d2f6-4c42-abd2-3812db226a11)
+
