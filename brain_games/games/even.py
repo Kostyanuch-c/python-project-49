@@ -15,7 +15,7 @@ def problem_and_correct_answer():
 
 
 def game_even():
-    question = 'answer "yes" if the number is even, otherwise answer "no".'
+    question = 'Answer "yes" if the number is even, otherwise answer "no".'
     brain_games.enginy.welcome_us(question)
 
     counter = 0
