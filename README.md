@@ -14,3 +14,7 @@ brain-gcd
 brain_progression
 ![fourth](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/78f56359-d2f6-4c42-abd2-3812db226a11)
 
+brain-prime
+![fifth](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/30455ac7-b377-4017-92e7-68fd3565290c)
+
+
