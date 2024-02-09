@@ -15,7 +15,7 @@ def problem_and_correct_answer():
 
     delete_index = randint(0, length_lst - 1)
 
-    correct_answer = f'{progression[delete_index]}'
+    correct_answer = progression[delete_index]
 
     progression[delete_index] = '..'
 
@@ -31,3 +31,4 @@ def progression_game():
 
     while counter < 3:
         counter = brain_games.enginy.comparison(problem_and_answer=problem_and_correct_answer(), counter=counter)
+
