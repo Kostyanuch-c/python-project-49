@@ -1,5 +1,9 @@
 from random import randint
-import brain_games.enginy
+
+
+def welcome_question():
+    question = 'Find the greatest common divisor of given numbers.'
+    return question
 
 
 def algorithm_math(number_1, number_2):
@@ -20,11 +24,3 @@ def problem_and_correct_answer():
     return problem, correct_answer
 
 
-def gcd_game():
-    question = 'Find the greatest common divisor of given numbers.'
-    brain_games.enginy.welcome_us(question)
-
-    counter = 0
-
-    while counter < 3:
-        counter = brain_games.enginy.comparison(problem_and_answer=problem_and_correct_answer(), counter=counter)
