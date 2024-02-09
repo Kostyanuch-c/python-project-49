@@ -3,7 +3,7 @@ import brain_games.enginy
 
 
 def problem_and_correct_answer():
-    problem = randint(0, 1000)
+    problem = randint(0, 200)
 
     if problem % 2 == 0:
         correct_answer = 'yes'

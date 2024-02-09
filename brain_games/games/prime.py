@@ -3,7 +3,7 @@ import brain_games.enginy
 
 
 def problem_and_correct_answer():
-    problem = randint(1, 20)
+    problem = randint(1, 35)
     divider_lst = []
     for number in range(1, problem + 1):
         divider_lst.append(number)
