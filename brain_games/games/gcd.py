@@ -22,5 +22,3 @@ def problem_and_correct_answer():
     correct_answer = algorithm_math(first_value, second_value)
     problem = f'{first_value} {second_value}'
     return problem, correct_answer
-
-
