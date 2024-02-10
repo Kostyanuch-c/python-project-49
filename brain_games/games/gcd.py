@@ -1,7 +1,7 @@
 from random import randint
 
 
-def welcome_question_gcd():
+def welcome_question():
     question = 'Find the greatest common divisor of given numbers.'
     return question
 
@@ -15,7 +15,7 @@ def algorithm_math(number_1, number_2):
     return f'{max(lst)}'
 
 
-def problem_and_correct_answer_gcd():
+def problem_and_correct_answer():
     first_value = randint(1, 10)
     second_value = randint(1, 20)
 

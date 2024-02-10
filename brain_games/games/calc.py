@@ -2,13 +2,12 @@ from random import randint, choice
 import operator
 
 
-# def calc_welcome():
-#     question = 'What is the result of the expression?'
-#     return question
-
-
-def calc_game_logic():
+def welcome_question():
     question = 'What is the result of the expression?'
+    return question
+
+
+def problem_and_correct_answer():
     action = {
         "+": operator.add,
         "-": operator.sub,
@@ -21,4 +20,4 @@ def calc_game_logic():
 
     correct_answer = f'{action[random_operation](first_value, second_value)}'
     problem = f'{first_value} {random_operation} {second_value}'
-    return question, problem, correct_answer
+    return problem, correct_answer

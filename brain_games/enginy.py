@@ -14,16 +14,14 @@ def user_answer():
     return string('Your answer: ')
 
 
-def comparison(logic_game):
-    tpl_with_question = logic_game()
-    question = tpl_with_question[0]
+def comparison(question, problem_and_answer):
     welcome_us(question)
     counter = 0
     while counter < 3:
 
-        tpl_with_problem_and_answer = logic_game()
-        correct_answer = tpl_with_problem_and_answer[2]
-        problem = tpl_with_problem_and_answer[1]
+        tpl_with_result = problem_and_answer()
+        correct_answer = tpl_with_result[1]
+        problem = tpl_with_result[0]
 
         print(f'Question: {problem}')
         answer = user_answer()
