@@ -29,7 +29,8 @@ def comparison(question, problem_and_answer):
             counter += 1
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'. "
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'."
                   f"\nLet's try again, {user_name}!")
             break
 

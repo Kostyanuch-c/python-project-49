@@ -1,12 +1,12 @@
 from random import randint
 
 
-def welcome_question():
+def welcome_question_prime():
     question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     return question
 
 
-def problem_and_correct_answer():
+def problem_and_correct_answer_prime():
     problem = randint(1, 30)
     divider_lst = list(range(1, problem + 1))
 
