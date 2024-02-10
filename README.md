@@ -28,12 +28,17 @@ brain-calc
 
 
 brain-gcd
-![third](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/4eba0987-2338-423f-9184-17cd5ff48445)
+![trhee](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/42a44a09-5a3b-482b-b21b-dd2469a3bc95)
+
+
 
 brain_progression
-![fourth](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/78f56359-d2f6-4c42-abd2-3812db226a11)
+![fourh](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/e6c172e3-3d75-4356-9d13-d6ed0cad3eed)
+
+
 
 brain-prime
-![fifth](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/30455ac7-b377-4017-92e7-68fd3565290c)
+![fifth](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/1cd45276-d8af-49e5-93a9-4c1387a95544)
+
 
 
