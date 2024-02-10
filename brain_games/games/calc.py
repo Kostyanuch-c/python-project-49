@@ -2,12 +2,12 @@ from random import randint, choice
 import operator
 
 
-def welcome_question():
+def welcome_question_calc():
     question = 'What is the result of the expression?'
     return question
 
 
-def problem_and_correct_answer():
+def problem_and_correct_answer_calc():
     action = {
         "+": operator.add,
         "-": operator.sub,
