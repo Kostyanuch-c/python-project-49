@@ -6,6 +6,7 @@
 pip install --user git+https://github.com/Kostyanuch-c/python-project-49.git
 
 Пакет brain_games содержит 5 простых математических игр, чтобы выйграть в любую из них нужно три раза подряд правильно ответить на вопрос. 
+
 Список игр:
 
 brain-even - Проверка на чётность
