@@ -1,12 +1,13 @@
 from random import randint
 
 
-def welcome_question():
+# def welcome_question():
+#     question = 'Answer "yes" if the number is even, otherwise answer "no".'
+#     return question
+
+
+def logic_even_game():
     question = 'Answer "yes" if the number is even, otherwise answer "no".'
-    return question
-
-
-def problem_and_correct_answer():
     problem = randint(0, 200)
 
     if problem % 2 == 0:
@@ -15,4 +16,4 @@ def problem_and_correct_answer():
         correct_answer = 'no'
     else:
         correct_answer = 'no'
-    return problem, correct_answer
+    return question, problem, correct_answer
