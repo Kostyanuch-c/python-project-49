@@ -7,10 +7,8 @@ def welcome_question():
 
 
 def problem_and_correct_answer():
-    problem = randint(1, 35)
-    divider_lst = []
-    for number in range(1, problem + 1):
-        divider_lst.append(number)
+    problem = randint(1, 30)
+    divider_lst = list(range(1, problem + 1))
 
     for divider in divider_lst[:]:
         if problem % divider != 0:
