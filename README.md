@@ -1,6 +1,17 @@
-### Hexlet tests and linter status:
+[DUmCK4x6.txt](https://github.com/Kostyanuch-c/python-project-49/files/14229069/DUmCK4x6.txt)### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Kostyanuch-c/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Kostyanuch-c/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/aac79767b858ddc9654e/maintainability)](https://codeclimate.com/github/Kostyanuch-c/python-project-49/maintainability)
+
+Установка 
+pip install --user git+https://github.com/Kostyanuch-c/python-project-49.git
+
+Пакет brain_games содержит 5 простых математических игр, чтобы выйграть в любую из них нужно три раза подряд правильно ответить на вопрос. 
+Список игр:
+brain-even - Проверка на чётность
+brain-cacl - Калькулятор
+brain-gcd - Наибольший общий делитель (НОД)   
+brain-progression - Арифметическая прогрессия
+brrain-prime - Простое ли число?
 
 brain-even
 ![first](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/8b0ceff1-b092-4dfe-a967-5dc45e73e53f)
