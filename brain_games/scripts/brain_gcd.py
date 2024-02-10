@@ -6,7 +6,7 @@ import brain_games.enginy
 
 def main():
     brain_games.enginy.comparison(welcome_question_gcd(),
-                                  problem_and_correct_answer_gcd())
+                                  problem_and_correct_answer_gcd)
 
 
 if __name__ == '__main__':
