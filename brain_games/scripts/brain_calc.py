@@ -5,7 +5,7 @@ from brain_games.enginy import comparison
 
 
 def main():
-    comparison(calc_welcome(), calc_game_logic())
+    comparison(calc_welcome(), calc_game_logic)
 
 
 if __name__ == '__main__':
