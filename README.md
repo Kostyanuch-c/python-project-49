@@ -1,7 +1,8 @@
 [![Actions Status](https://github.com/Kostyanuch-c/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Kostyanuch-c/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/aac79767b858ddc9654e/maintainability)](https://codeclimate.com/github/Kostyanuch-c/python-project-49/maintainability)
 
-Установка 
+Установка:
+
 pip install --user git+https://github.com/Kostyanuch-c/python-project-49.git
 
 Пакет brain_games содержит 5 простых математических игр, чтобы выйграть в любую из них нужно три раза подряд правильно ответить на вопрос. 
