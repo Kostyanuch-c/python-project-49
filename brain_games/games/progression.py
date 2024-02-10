@@ -1,12 +1,12 @@
 from random import randint
 
 
-def welcome_question():
+def welcome_question_progression():
     question = 'What number is missing in the progression?'
     return question
 
 
-def problem_and_correct_answer():
+def problem_and_correct_answer_progression():
     length_lst = randint(5, 12)
     step = randint(2, 8)
 
