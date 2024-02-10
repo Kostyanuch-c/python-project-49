@@ -5,8 +5,9 @@ import brain_games.enginy
 
 
 def main():
-    brain_games.enginy.comparison(welcome_question_calc(),
-                                  problem_and_correct_answer_calc)
+    brain_games.enginy.comparison(
+        welcome_question_calc(),
+        problem_and_correct_answer_calc)
 
 
 if __name__ == '__main__':
