@@ -1,9 +1,6 @@
 from random import randint
 
-
-def welcome_question():
-    question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    return question
+QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def problem_and_correct_answer():

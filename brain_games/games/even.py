@@ -1,9 +1,6 @@
 from random import randint
 
-
-def welcome_question():
-    question = 'Answer "yes" if the number is even, otherwise answer "no".'
-    return question
+QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def problem_and_correct_answer():

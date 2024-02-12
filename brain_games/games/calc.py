@@ -1,10 +1,7 @@
 from random import randint, choice
 import operator
 
-
-def welcome_question():
-    question = 'What is the result of the expression?'
-    return question
+QUESTION = 'What is the result of the expression?'
 
 
 def problem_and_correct_answer():

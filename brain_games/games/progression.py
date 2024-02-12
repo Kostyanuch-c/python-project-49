@@ -1,9 +1,6 @@
 from random import randint
 
-
-def welcome_question():
-    question = 'What number is missing in the progression?'
-    return question
+QUESTION = 'What number is missing in the progression?'
 
 
 def problem_and_correct_answer():

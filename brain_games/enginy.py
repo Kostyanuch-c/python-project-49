@@ -14,12 +14,12 @@ def user_answer():
     return string('Your answer: ')
 
 
-def comparison(question, problem_and_answer):
-    welcome_us(question)
+def game_engine(game_module):
+    welcome_us(game_module.QUESTION)
     counter = 0
     while counter < 3:
 
-        tpl_with_result = problem_and_answer()
+        tpl_with_result = game_module.problem_and_correct_answer()
         correct_answer = tpl_with_result[1]
         problem = tpl_with_result[0]
 
