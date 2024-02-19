@@ -20,5 +20,3 @@ def problem_and_correct_answer():
         correct_answer = 'no'
 
     return f'{problem}', correct_answer
-
-

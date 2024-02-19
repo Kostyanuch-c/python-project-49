@@ -15,6 +15,3 @@ def problem_and_correct_answer():
         correct_answer = 'no'
 
     return problem, correct_answer
-
-
-
