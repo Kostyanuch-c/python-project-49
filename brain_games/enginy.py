@@ -1,5 +1,7 @@
 from prompt import string
 
+NUMBER_OF_ROUNDS = 3
+
 
 def welcome_us(question):
     user_name = string('May I have your name? ')
@@ -8,19 +10,15 @@ def welcome_us(question):
     return user_name
 
 
-def user_answer():
-    return string('Your answer: ')
-
-
 def game_engine(game_module):
     user_name = welcome_us(game_module.QUESTION)
     counter = 0
-    while counter < 3:
+    while counter < NUMBER_OF_ROUNDS:
 
         problem, correct_answer = game_module.problem_and_correct_answer()
 
         print(f'Question: {problem}')
-        answer = user_answer()
+        answer = string('Your answer: ')
         if answer == correct_answer:
             counter += 1
             print('Correct!')
