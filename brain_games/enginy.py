@@ -3,7 +3,7 @@ from prompt import string
 NUMBER_OF_ROUNDS = 3
 
 
-def welcome_us(question):
+def welcome_user(question):
     user_name = string('May I have your name? ')
     print(f"Hello, {user_name}"
           f"\n{question}")
@@ -11,7 +11,7 @@ def welcome_us(question):
 
 
 def game_engine(game_module):
-    user_name = welcome_us(game_module.QUESTION)
+    user_name = welcome_user(game_module.QUESTION)
     counter = 0
     while counter < NUMBER_OF_ROUNDS:
 
