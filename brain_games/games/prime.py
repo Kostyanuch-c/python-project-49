@@ -14,9 +14,6 @@ def is_prime(number):
 
 def problem_and_correct_answer():
     problem = randint(1, 30)
-    if is_prime(problem):
-        correct_answer = 'yes'
-    else:
-        correct_answer = 'no'
+    correct_answer = 'yes' if is_prime(problem) else 'no'
 
     return f'{problem}', correct_answer
