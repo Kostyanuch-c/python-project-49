@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.10
 import curses
-from brain_games.enginy import game_engine
+from brain_games.enginy_curses import game_engine
 from brain_games.games import calc, gcd, prime, progression, even
 
 GAMES = {
