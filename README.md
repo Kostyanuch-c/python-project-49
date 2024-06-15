@@ -19,9 +19,12 @@ brain-progression - Арифметическая прогрессия
 
 brrain-prime - Простое ли число?
 
-brain-even
+<details>
+
+<summary>brain-even</summary>
 ![first](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/5cb2b81e-48da-429a-863e-144c6390c8f8)
 
+</details>
 
 brain-calc
 ![second](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/46d9a6f9-43b9-4a7c-bd2e-3b19ea4e685a)
