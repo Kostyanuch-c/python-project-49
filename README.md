@@ -7,15 +7,15 @@
 
 **List of games:**
 
-* ***brain-even*** - Проверка на чётность
+* ***brain-even*** - Parity check
 
 * ***brain-cacl*** - Калькулятор
 
-* ***brain-gcd*** - Наибольший общий делитель (НОД)   
+* ***brain-gcd*** - Greatest Common Divisor (GCD)   
 
-* ***brain-progression*** - Арифметическая прогрессия
+* ***brain-progression*** - Arithmetic progression
 
-* ***brain-prime*** - Простое ли число?
+* ***brain-prime*** - Is it a prime number?
 
 ## Install
 + **Linux:**
