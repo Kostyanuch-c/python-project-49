@@ -1,5 +1,6 @@
 import curses
 
+# from brain_games.statistics.statistic import
 NUMBER_OF_ROUNDS = 3
 
 
@@ -29,7 +30,7 @@ def game_engine(game_module, name_user):
 
     answer_win.refresh()
     question_win.refresh()
-    for _ in range(NUMBER_OF_ROUNDS):
+    for i in range(NUMBER_OF_ROUNDS):
 
         problem, correct_answer = game_module.problem_and_correct_answer()
 
@@ -38,7 +39,12 @@ def game_engine(game_module, name_user):
 
         user_answer = answer_win.getstr(1, 13).decode()
         if user_answer == correct_answer:
-            question_win.addstr(3, 1, 'Correct! Keep it up!', GREEN_AND_BLACK)
+            if i < NUMBER_OF_ROUNDS - 2:
+                question_win.addstr(3, 1, 'Correct! Keep up the good work!',
+                                    GREEN_AND_BLACK)
+            else:
+                question_win.addstr(3, 1, 'Correct! One more!             ',
+                                    GREEN_AND_BLACK)
             question_win.move(2, 1)
             question_win.clrtoeol()
 
@@ -52,7 +58,8 @@ def game_engine(game_module, name_user):
                                 RED_AND_BLACK)
             question_win.addstr(*question_win.getyx(),
                                 f";(. Correct answer was '{correct_answer}'")
-            question_win.addstr(4, 1, f"Let's try again, {name_user}!")
+            question_win.addstr(4, 1, f"Let's try again, {name_user}"
+                                      f"! Or choose another game!")
             question_win.refresh()
             break
 
@@ -67,3 +74,6 @@ def game_engine(game_module, name_user):
         question_win.addstr(4, 1, f'Congratulation '
                                   f'{name_user}! Shall we play again?')
         question_win.refresh()
+
+        return True
+    return False

@@ -2,6 +2,7 @@
 import curses
 from brain_games.enginy_curses import game_engine
 from brain_games.games import calc, gcd, prime, progression, even
+from brain_games.statistics import statistic
 
 GAMES = {
     '49': even,
@@ -22,7 +23,7 @@ def main():
     name = welcome_win.getstr().decode()
 
     curses.noecho()
-    help_win = curses.newwin(9, curses.COLS - 1, 10, 1)
+    help_win = curses.newwin(9, int(curses.COLS - 1), 10, 1)
     help_win.addstr(1, 1, "Help: ", curses.A_BOLD)
     help_win.addstr(2, 1, "q - quit")
     help_win.addstr(3, 1, "1 - brain-even")
@@ -33,24 +34,41 @@ def main():
     help_win.bkgd('.')
     help_win.box()
 
-    done = False
-    while not done:
+    stat_win = curses.newwin(int(curses.LINES * 0.21),
+                             int(curses.COLS * 0.2),
+                             int(curses.LINES * 0),
+                             int(curses.COLS * 0.25))
+    stat_win.addstr(1, int(stat_win.getmaxyx()[1] * 0.3), 'Current statistics')
+
+    stat_win.box()
+
+    while True:
+        stat_win.addstr(2, 1, f'brain-even: {statistic.get_stat_even()}')
+        stat_win.addstr(3, 1, f'brain-gcd: {statistic.get_stat_gcd()}')
+        stat_win.addstr(4, 1, f'brain-calc: {statistic.get_stat_calc()}')
+        stat_win.addstr(5, 1, f'brain-prime: {statistic.get_stat_prime()}')
+        stat_win.addstr(6, 1, f'brain-progression: '
+                              f'{statistic.get_stat_progression()}')
+        stat_win.addstr(7, 1, f'Total: {statistic.get_total_stat()[0]}')
+        stat_win.addstr(8, 1, f'       {statistic.get_total_stat()[1]}')
         curses.noecho()
         stdscr.addstr(1, 1, 'Welcome to the Brain Games!')
-        stdscr.addstr(2, 1, f'hello, {name}!')
+        stdscr.addstr(2, 1, f'Hello, {name}! Choose a game!')
 
         stdscr.refresh()
         welcome_win.refresh()
+        stat_win.refresh()
         help_win.refresh()
 
-        choise = stdscr.getch()
+        choice_chr = stdscr.getch()
         curses.echo()
-        if choise == ord('q') or choise == ord('й'):
-            done = True
+        if choice_chr == ord('q') or choice_chr == ord('й'):
+            break
         else:
-            game_module = GAMES.get(str(choise), None)
+            game_module = GAMES.get(str(choice_chr), None)
             if game_module:
-                game_engine(game_module, name)
+                result = game_engine(game_module, name)
+                statistic.make_statistic(str(game_module).split()[1], result)
 
     curses.endwin()
 
