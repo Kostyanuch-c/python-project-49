@@ -52,7 +52,7 @@
 
 <details>
 
-<summary>brain_progression</summary>
+<summary>brain-progression</summary>
 
 ![fourh](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/e6c172e3-3d75-4356-9d13-d6ed0cad3eed)
 
