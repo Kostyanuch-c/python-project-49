@@ -60,7 +60,7 @@
 
 <details>
 
-<summary>brain_prime</summary>
+<summary>brain-prime</summary>
 
 ![fifth](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/1cd45276-d8af-49e5-93a9-4c1387a95544)
 
@@ -68,3 +68,16 @@
 
 ## TUI
 
+
+Use ***brain-games-tui*** to open the console application containing all 5 games with the same rules and showing statistics for the current session.
+
+To avoid resolution errors, recommend using the command while in the ***full screen*** of the terminal. 
+
+## Demonstrations
+
+<details>
+
+<summary>brain-games-tui</summary>
+
+
+</details>

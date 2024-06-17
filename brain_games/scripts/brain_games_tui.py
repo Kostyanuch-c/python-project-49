@@ -23,7 +23,7 @@ def main():
     name = welcome_win.getstr().decode()
 
     curses.noecho()
-    help_win = curses.newwin(9, int(curses.COLS - 1), 10, 1)
+    help_win = curses.newwin(9, int(curses.COLS - 1), 12, 1)
     help_win.addstr(1, 1, "Help: ", curses.A_BOLD)
     help_win.addstr(2, 1, "q - quit")
     help_win.addstr(3, 1, "1 - brain-even")
@@ -34,8 +34,8 @@ def main():
     help_win.bkgd('.')
     help_win.box()
 
-    stat_win = curses.newwin(int(curses.LINES * 0.21),
-                             int(curses.COLS * 0.2),
+    stat_win = curses.newwin(int(curses.LINES * 0.23),
+                             int(curses.COLS * 0.3),
                              int(curses.LINES * 0),
                              int(curses.COLS * 0.25))
     stat_win.addstr(1, int(stat_win.getmaxyx()[1] * 0.3), 'Current statistics')
