@@ -79,5 +79,6 @@ To avoid resolution errors, recommend using the command while in the ***full scr
 
 <summary>brain-games-tui</summary>
 
+![tui](https://github.com/Kostyanuch-c/python-project-49/assets/98832310/6a98162d-8864-49e0-b8a9-16234431a48e)
 
 </details>
